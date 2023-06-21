@@ -64,7 +64,7 @@ export default function VentureDiv({ value }: any) {
                               <>
                                 {" "}
                                 <Image
-                                  alt="Developer"
+                                  alt="Dev"
                                   src={Upper}
                                   className="hidden absolute lg:block -left-5 -top-5 "
                                 />
