@@ -126,7 +126,7 @@ const Map = ({ value }: any) => {
                           }}
                         >
                           <div className="w-full h-full">
-                            <Link href={obj.websiteUrl} target="_blank">
+                            <a href={obj.websiteUrl} target="_blank">
                               <div className=" ">
                                 <Image
                                   src={obj.mainImage.url}
@@ -137,7 +137,7 @@ const Map = ({ value }: any) => {
                                 <p className="font-bold">{obj.ventureName}</p>
                                 <p>{obj.venturestatus}</p>
                               </div>
-                            </Link>
+                            </a>
                           </div>
                         </InfoWindowF>
                       ) : null}
