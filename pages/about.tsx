@@ -6,10 +6,12 @@ import Toprightcorner from '@/components/reusable/Toprightcorner'
 import Bottom from '@/components/reusable/Bottom'
 import Timeline from '@/components/Timeline'
 import Csr from '@/components/Csr'
+import client from '@/utils/apolloClient'
+import { gql } from '@apollo/client'
 
 
 
-export default function about() {
+export default function about({data}:any) {
 
   return (
     <>
@@ -24,7 +26,7 @@ export default function about() {
           </div>
           <div className='relative'>
             <Bottom />
-            <Team />
+            <Team value={data}/>
 
           </div>
           <Csr />
@@ -41,4 +43,34 @@ export default function about() {
   )
 }
 
+export async function getStaticProps() {
+
+  const { data, error } = await client.query({
+    query: gql`
+    query teams {
+      teams {
+        name
+        designation
+        linkedInUrl
+        shortDescription
+        profileImage {
+          url
+        }
+      }
+    }
+    `,
+  });
+
+  if (!data && error) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      data: data
+    },
+  };
+}
 

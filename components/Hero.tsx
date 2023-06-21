@@ -20,16 +20,15 @@ export default function Hero({ data }: any) {
 
     return (<>
         <div className="max-w-7xl mx-auto ">
-            <div className="flex flex-col-reverse md:flex md:flex-row md:min-h-screen">
+            <div className="flex flex-col-reverse md:flex md:flex-row md:min-h-[500px] lg:min-h-screen">
                 <div className="md:w-[60%] mx-7  grid justify-items-center content-center  ">
-                    <div className="text-2xl md:text-4xl grid  text-primary z-10">
-                        <p className={`${myFont.className}`}>{`Welcome to the Star Group`}</p>
-                        <p className={`${myFont.className} md:text-5xl pt-5`}>{`An amalgamation,`}</p>
-                        <p className={`${myFont.className} md:text-5xl py-2`}>{` of flourishing endeavors`}</p>
+                    <div className=" grid  text-primary z-10">
+                        <p className={`${myFont.className} text-xl md:text-3xl lg:text-4xl`}>{`Welcome to the Star Group`}</p>
+                        <p className={`${myFont.className} text-2xl md:text-4xl lg:text-5xl pt-2 md:pt-5 `}>{`An amalgamation,`}</p>
+                        <p className={`${myFont.className} text-2xl md:text-4xl lg:text-5xl py-2 `}>{` of flourishing endeavors`}</p>
                         {/* <div className="text-lg py-10 z-10">
                             <p className={`${pTSans.className}`}>{`Star group: Elevating Experiences in Hospitality,`}</p>
                             <p className={`${pTSans.className}`}>{`Cosmetology, and IT Staffing!`}</p>
-                           
                         </div> */}
                     </div>
 

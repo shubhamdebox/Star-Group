@@ -19,15 +19,16 @@ const Timeline = () => {
 
 
     return (
-        <div className='max-w-7xl  mx-auto py-10 ' >
+        <div className='max-w-7xl  mx-auto py-10 overflow-x-hidden' >
             <div className={`grid justify-center items-center pb-10 ${myFont.className}`} data-aos="fade-up"  >
-                <span className='text-5xl'>Timeline</span>
+                <span className='text-4xl lg:text-5xl'>Timeline</span>
             </div>
             <div className='md:flex md:flex-col space-y-5  md:space-y-12 px-5 md:px-20 lg:px-60 '  >
                 {data.map((val: any, index) => {
                     return (<>
                         <div className={` `} key={index}>
-                            <div className={`${index % 2 == 0 ? "md:flex row  " : "md:flex md:flex-row-reverse "}`} data-aos-duration="1500" data-aos={`${index % 2 == 0 ?"fade-left" : "fade-right"}` }>
+                            <div className={`${index % 2 == 0 ? "md:flex row  " : "md:flex md:flex-row-reverse "}`} 
+                            data-aos-duration="1500" data-aos={`${index % 2 == 0 ?"fade-left" : "fade-right"}` }>
                                 <div className=''>
                                     <Image src={val.image} alt={'Timeline Images'} width={0}
                                         height={0}

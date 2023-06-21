@@ -149,7 +149,7 @@ const Contact = () => {
         <Toaster />
       </div>
       <div className="text-gray-100 px-8 ">
-        <div className="max-w-screen-xl  px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-gray-900 rounded-lg ">
+        <div className="max-w-screen-xl   grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-gray-900 rounded-lg ">
           <div className="flex flex-col justify-start">
             <div className=" mb-8">
               <h2 className="text-xl lg:text-3xl font-bold leading-tight md:text-left text-center">
@@ -240,7 +240,7 @@ const Contact = () => {
             </div> */}
           </div>
           <div className="">
-            <h2 className="text-center font-bold txet-xl py-4 md:hidden">
+            <h2 className="text-center font-bold text-xl py-4 md:hidden">
               Contact us
             </h2>
             <form

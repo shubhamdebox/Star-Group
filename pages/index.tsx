@@ -12,8 +12,9 @@ import Topline from '../components/reusable/Topline'
 import Bottomline from '@/components/reusable/Bottomline'
 import Toprightcorner from '@/components/reusable/Toprightcorner'
 import Center from '@/components/reusable/Center'
+import Map from "../components/Map"
 
-export default function Home({ data }: any) {
+export default function Home({ data , data2 }: any) {
   return (
     <>
       <div className='md:mt-[8rem] mt-24 '>
@@ -26,6 +27,7 @@ export default function Home({ data }: any) {
         </div>
         <Homegridcon />
         <Services />
+        <Map value={data2}/>
       </div>
     </>
   )
@@ -47,7 +49,29 @@ export async function getStaticProps() {
     `,
   });
 
-  if (!data && error) {
+  const { data : data2  } = await client.query({
+    query: gql`
+    query MyQuery {
+      ventures {
+        ventureName
+        venturestatus
+        websiteUrl
+        location
+        mainImage {
+          url
+        }
+        about
+        geolocation {
+          latitude
+          longitude
+        }
+        id
+      }
+    }
+    `,
+  });
+
+  if (!data && error || !data2) {
     return {
       notFound: true,
     };
@@ -55,7 +79,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      data: data
+      data: data,
+      data2 : data2
     },
   };
 }

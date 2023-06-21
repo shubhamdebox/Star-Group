@@ -25,19 +25,19 @@ export default function Colagecontainer() {
     return (
         <>
             <div className="max-w-5xl mx-auto ">
-                <div className="md:grid md:grid-cols-2 grid px-5 md:px-3 py-20 gap-5 ">
+                <div className="md:grid md:grid-cols-2 grid px-5 md:px-10 py-10 lg:py-20 gap-5 ">
 
                     <div className="flex flex-col space-y-5 " >
                     <div className="bg-secondary p-4  border-2 shadow-[6px_8px_0px_0px_#1a202c]  z-10" >
-                        <p className={`text-3xl pb-5 ${myFont.className} `}>Core Values</p>
+                        <p className={`text-2xl lg:text-3xl pb-5 ${myFont.className} `}>Core Values</p>
                         {data.map((data: any , index:any) => (
                             <>
                                     <div key={data.title}>
-                                    <span className={` text-xl ${myFont.className}`}  >{index + 1} {`)`}  {data.title}</span>
+                                    <span className={` text-lg lg:text-xl ${myFont.className}`}  >{index + 1} {`)`}  {data.title}</span>
                                     <div className="py-2">
                                         {/* <span className={` text-2xl ${tinos.className}`}>{data.title2}</span> */}
                                         <div className="">
-                                            <p className={`${techsans.className} px-4`}>{data.description}</p>
+                                            <p className={`${techsans.className} text-sm lg:text-base px-4`}>{data.description}</p>
                                         </div>
                                     </div>
                                     </div>
@@ -49,11 +49,11 @@ export default function Colagecontainer() {
                     <div className="flex flex-col space-y-5">{data2.map((data: any) => (
                             <>
                                 <div  className="bg-secondary p-4 border-2 shadow-[6px_8px_0px_0px_#1a202c] z-10" key={data.title}>
-                                    <span className={` text-3xl ${myFont.className}`}>{data.title}</span>
+                                    <span className={`text-2xl lg:text-3xl ${myFont.className}`}>{data.title}</span>
                                     <div className="py-4">
-                                        <span className={` text-2xl ${tinos.className}`}>{data.title2}</span>
+                                        <span className={`text-xl lg:text-2xl ${tinos.className}`}>{data.title2}</span>
                                         <div className="py-3">
-                                            <p className={`${techsans.className}`}>{data.description}</p>
+                                            <p className={`${techsans.className} text-sm lg:text-base`}>{data.description}</p>
                                         </div>
                                     </div>
                                 </div>

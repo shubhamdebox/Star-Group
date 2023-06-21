@@ -24,22 +24,22 @@ export default function Services() {
     return (
         <>
 
-            <div className='bg-lightwhite  text-primary z-10 py-10 '  >
+            <div className='bg-lightwhite  text-primary z-10  '  >
             
-                <div className="max-w-7xl mx-auto ">
+                <div className="max-w-7xl mx-auto px-10">
                     <div className='grid md:grid-cols-3 gap-8 justify-center text-center ' data-aos="fade-up" >
                         {data.map((value: any) => {
                             return (
                                 <>
                                     <div  key={value.title}>
                                         <div className='py-10 grid justify-center text-center'>
-                                            <Image src={value.logo} alt={'Group of peoples'} />
+                                            <Image src={value.logo} alt={'Group of peoples'} className='h-14 '/>
                                         </div>
                                        
-                                        <span className={`text-4xl ${myFont.className}`}>{value.title}</span>
+                                        <span className={`text-2xl lg:text-4xl ${myFont.className}`}>{value.title}</span>
 
                                         <div className=''>
-                                            <p className='text-6xl py-4 '><CountUp end={value?.value} duration={10}/>{value.symbol}</p>
+                                            <p className='text-5xl lg:text-6xl py-4 '><CountUp end={value?.value} duration={10}/>{value.symbol}</p>
                                             <p className='italic text-sm'>{value.subtitle}</p>
                                         </div>
  
