@@ -13,10 +13,20 @@ import Bottomline from '@/components/reusable/Bottomline'
 import Toprightcorner from '@/components/reusable/Toprightcorner'
 import Center from '@/components/reusable/Center'
 import Map from "../components/Map"
+import Head from 'next/head'
 
 export default function Home({ data , data2 }: any) {
   return (
     <>
+     <Head>
+        <title>{`Star-Group Home`}</title>
+        <meta
+          name="description"
+          content=""
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <div className='md:mt-[8rem] mt-24 '>
         <div className='relative'>
           <Topline/>

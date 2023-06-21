@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Info from "@/components/Info";
+import Head from "next/head";
 
 const variants = {
   fadeIn: {
@@ -142,7 +143,15 @@ const Contact = () => {
 
   return (
     <>
-     
+     <Head>
+        <title>{`Star-Group Contact-Us`}</title>
+        <meta
+          name="description"
+          content=""
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
     <div className="mt-24 md:mt-28">
     <Info title={"Contact Us"} description={"With the explosion of data in recent years, businesses are looking for ways to process and analyze vast amounts of data in real time."} />
     <div className="z-50">
