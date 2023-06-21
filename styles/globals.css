@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 
+
 .bg-div {
   background-image: url('../public/QA.webp');
   background-size: cover; /* Optional: Adjust the background size */
   background-repeat: no-repeat; /* Optional: Adjust the background repeat */
   background-position: center; /* Optional: Adjust the background position */
-  /* Additional styling properties */
- 
 }
