@@ -16,7 +16,7 @@ export default function about({data}:any) {
     <>
       <div className=''>
       <Head>
-        <title>{`Star-Group`}</title>
+        <title>{`Star-Group About Us`}</title>
         <meta
           name="description"
           content=""
