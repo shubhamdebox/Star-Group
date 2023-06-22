@@ -11,8 +11,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import localFont from "next/font/local";
-
-
+const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)
 const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 
 
@@ -32,7 +31,7 @@ const Map = ({ value }: any) => {
   const [places, setPlaces] = useState<any[]>(value.ventures);
   const [zoom, setZoom] = useState(7);
   const [selectedMarker, setSelectedMarker] = useState<string>("");
-
+  
   return (
     <div className="">
     <div className={`max-w-7xl mx-auto grid justify-center pt-10 text-4xl  lg:text-5xl ${myFont.className}`}>
@@ -140,9 +139,9 @@ const Map = ({ value }: any) => {
                                 />
                                 </div>
                                 <div className="flex flex-col space-y-2">
-                                <p className="font-bold">{obj.ventureName}</p>
-                                {obj.venturestatus != "Active" ? <p>{obj.venturestatus}</p> : ""}
-                                <p>{obj.about}</p>
+                                <p className={`font-bold ${myFont.className} text-lg`}>{obj.ventureName}</p>
+                                {obj.venturestatus != "Active" ? <p className={`${myFont.className}`}>{obj.venturestatus}</p> : ""}
+                                <p className={`${techsans.className}`}>{obj.about}</p>
                                 </div>
                               </div>
                             </a>
