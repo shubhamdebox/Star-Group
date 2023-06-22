@@ -21,11 +21,9 @@ const Map = ({ value }: any) => {
     libraries: ["places"],
   });
 
-  
-
   const [center, setCenter] = useState({
-    lat: 39.83441344114856,
-    lng: -86.08096143695595,
+    lat: 38.72869695056362,
+    lng: -80.73035958807661,
   });
 
   const [places, setPlaces] = useState<any[]>(value.ventures);
