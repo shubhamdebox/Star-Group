@@ -33,10 +33,11 @@ const Map = ({ value }: any) => {
   const [selectedMarker, setSelectedMarker] = useState<string>("");
 
   return (
-    <div className="bg-lightwhite">
-    <div className={`max-w-7xl mx-auto grid justify-center py-10 bg-lightwhite text-4xl ${myFont.className}`}>
-        <p>{`Our Location`}</p>
+    <div className="">
+    <div className={`max-w-7xl mx-auto grid justify-center pt-10 text-4xl  lg:text-5xl ${myFont.className}`}>
+        <p>{`Our Reach`}</p>
     </div>
+    <div className="max-w-7xl mx-auto py-10 px-5">
       {isLoaded && (
         <>
           <GoogleMap
@@ -57,7 +58,7 @@ const Map = ({ value }: any) => {
               ignoreHidden
               enableRetinaIcons
               gridSize={40}
-              minimumClusterSize={4}
+              minimumClusterSize={2}
               maxZoom={20}
               zoomOnClick={true}
               styles={[
@@ -151,6 +152,7 @@ const Map = ({ value }: any) => {
           </GoogleMap>
         </>
       )}
+      </div>
     </div>
   );
 };

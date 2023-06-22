@@ -20,24 +20,23 @@ export default function VentureDiv({ value }: any) {
         <>
           {data.length > 0 ? (
             <>
-              <div className=" transition-all duration-500">
+              <div className="   ">
                 {data.map((val: any, index: any) => {
                   return (
                     <>
                       <div
-                        className="py-3 lg:py-10 w-[100%]  transition-all duration-300"
+                        className="py-3 lg:py-10 w-[100%]   "
                         key={val.location}
                       >
                         <div
-                          className={`  ${
-                            index % 2 == 0
+                          className={`  ${index % 2 == 0
                               ? "flex row"
                               : "flex flex-row-reverse "
-                          } group-hover:scale-110 group-hover:scale-y-105 transition-all duration-300`}
+                            } group-hover:scale-110 group-hover:scale-y-105  `}
                         >
                           <Link
                             href={val.websiteUrl}
-                            className="group relative block bg-gray-800  "
+                            className="group relative block bg-gray-800 "
                             target="_blank"
                           >
                             <div className="">
@@ -45,11 +44,10 @@ export default function VentureDiv({ value }: any) {
                                 layout="fill"
                                 alt="Developer"
                                 src={val.mainImage.url}
-                                className={`brightness-[0.3] lg:brightness-100 absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 lg:scale-y-95 group-hover:scale-x-100 group-hover:scale-y-100 group-hover:transition group-hover:delay-300 group-hover:duration-300 group-hover:ease-in-out ${
-                                  val.venturestatus != "Active"
+                                className={`brightness-[0.3] lg:brightness-100 absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 lg:scale-y-95 group-hover:scale-x-100 group-hover:scale-y-100 group-hover:transition group-hover:delay-300 group-hover:duration-300 group-hover:ease-in-out ${val.venturestatus != "Active"
                                     ? "grayscale hover:grayscale-0"
                                     : ""
-                                } `}
+                                  } `}
                               />
                             </div>
                             {index % 2 == 0 ? (
@@ -75,7 +73,7 @@ export default function VentureDiv({ value }: any) {
                             </div>
                             <div className="relative p-4 sm:p-6 lg:p-8 group-hover:transition group-hover:delay-300 group-hover:duration-300 group-hover:ease-in-out">
                               <div className="border-2 border-r-0 lg:border-0 group-hover:border-2 py-2 px-3 group-hover:border-r-0 ">
-                                <div className="absolute top-2 md:top-4 lg:top-6 backdrop-blur-sm">
+                                <div className="absolute top-2 md:top-4 lg:top-6 backdrop-blur-sm ">
                                   <p
                                     className={`text-xl font-medium uppercase tracking-widest text-lightblue ${myFont.className}`}
                                   >

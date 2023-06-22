@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "../public/logo.svg";
+import localFont from "next/font/local";
 // import { morgan, stan } from "@/pages/_app";
+const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 
 const Footer = () => {
   return (
@@ -22,7 +24,7 @@ const Footer = () => {
           <Image src={logo} alt={""}
           />
         </div>
-        <div className=" flex flex-col gap-2 md:ml-14 ">
+        <div className={` flex flex-col gap-2 md:ml-14 ${myFont.className}`}>
           <h2 className={`pb-4 text-2xl md:text-4xl `}>
             Contact Us
           </h2>
@@ -71,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-t-2 border-white mt-4 max-w-6xl mx-auto" />
-      <div className="grid place-items-center py-8 text-center px-4  ">
+      <div className={` grid place-items-center py-8 text-center px-4 ${myFont.className}  `}>
         {/* <Image src={logo} alt={""} className="py-2" /> */}
         <h2 className="text-base md:text-lg pb-2 divide-x">
           <span>

@@ -24,7 +24,7 @@ export default function Services() {
     return (
         <>
 
-            <div className='bg-lightwhite  text-primary z-10  '  >
+            <div className='bg-lightwhite  text-primary z-10 py-5 '  >
             
                 <div className="max-w-7xl mx-auto px-10">
                     <div className='grid md:grid-cols-3 gap-8 justify-center text-center ' data-aos="fade-up" >
@@ -39,8 +39,8 @@ export default function Services() {
                                         <span className={`text-2xl lg:text-4xl ${myFont.className}`}>{value.title}</span>
 
                                         <div className=''>
-                                            <p className='text-5xl lg:text-6xl py-4 '><CountUp end={value?.value} duration={10}/>{value.symbol}</p>
-                                            <p className='italic text-sm'>{value.subtitle}</p>
+                                            <p className={`text-5xl lg:text-6xl py-4 ${myFont.className}`}><CountUp end={value?.value} duration={10}/>{value.symbol}</p>
+                                            <p className={`italic text-sm ${myFont.className}`}>{value.subtitle}</p>
                                         </div>
  
                                     </div>

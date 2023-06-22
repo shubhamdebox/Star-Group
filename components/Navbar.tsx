@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Router from "next/router";
 import Link from "next/link";
-import logo from "../public/logo.svg"
-
+import localFont from "next/font/local";
+const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 
 const navigation = [
     { name: "Home", href: "/#about" },
@@ -73,18 +72,18 @@ export default function Navbar() {
                             </Link>
                         </div>
                         {/* MD+ */}
-                        <div className="hidden gap-8  text-center items-center relative lg:flex ">
+                        <div className={`hidden gap-8  text-center items-center relative lg:flex ${myFont.className}`}>
                             {navigation.map((navItem) => (
-                                <Link key={navItem.name} href={navItem.href} className="group relative inline-block text-sm font-medium text-white focus:border-b-2 focus:ring-bordercolor inset-0 translate-x-0 translate-y-1 hover:border-b-2 border-bordercolor transition-transform hover:translate-y-1 ">
-
-                                    {/* <span
-                                        className="absolute  inset-0 translate-x-0 translate-y-1 group-hover:border-2 transition-transform group-hover:translate-y-1   "
-                                    ></span> */}
-
-                                    <span className="relative block  px-8 py-3  z-50 bg-primary ">
+                                <>
+                                    
+                                    <Link
+                                    key={navItem.name}
+                                        className="relative font-medium border-bordercolor focus:border-b-2 focus:ring-bordercolor text-white before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:bg-bordercolor before:transition hover:before:scale-x-100"
+                                        href={navItem.href}
+                                    >
                                         {navItem.name}
-                                    </span>
-                                </Link>
+                                    </Link>
+                                </>
                             ))}
                         </div>
                     </div>
@@ -115,14 +114,6 @@ export default function Navbar() {
                         } fixed transition-all top-0 left-0 w-full bg-black h-screen z-[100]  text-lg`}
                 >
                     <div className="flex justify-between">
-                        {/* <Image
-              priority
-              // height={120}
-              // width={160}
-              className="lg:w-72 w-40 h-20 pl-4"
-              alt="Himalayan Kitchen Logo"
-              src={logo}
-            /> */}
                         <button
                             onClick={() => setIsOpen((prev) => !prev)}
                             className="absolute top-4 right-4 text-white text-5xl"

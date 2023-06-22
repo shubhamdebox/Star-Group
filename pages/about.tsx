@@ -9,6 +9,7 @@ import Csr from '@/components/Csr'
 import client from '@/utils/apolloClient'
 import { gql } from '@apollo/client'
 import Head from 'next/head'
+import Team2 from '@/components/Team2'
 
 export default function about({data}:any) {
 
@@ -34,8 +35,8 @@ export default function about({data}:any) {
           </div>
           <div className='relative'>
             <Bottom />
-            <Team value={data}/>
-
+            {/* <Team value={data}/> */}
+            <Team2 value = {data}/>
           </div>
           <Csr />
           <div className='relative'>

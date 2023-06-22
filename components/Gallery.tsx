@@ -18,7 +18,7 @@ const Gallery = ({value}:any) => {
         <div className='max-w-7xl mx-auto grid justify-center text-center pb-10'>
                 <span className={`${myFont.className} text-4xl lg:text-5xl `}>{`Gallery`}</span>
         </div>
-        <div className="px-2 cursor-pointer pb-5">
+        <div className=" cursor-pointer pb-5 max-w-7xl mx-auto px-3 lg:px-10">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
