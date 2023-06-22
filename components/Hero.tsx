@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const myFont = localFont({ src: '../public/nimbussandext.ttf' , weight:"400" } ,)
 
+const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)
 
 export default function Hero({ data }: any) {
 
@@ -15,11 +16,11 @@ export default function Hero({ data }: any) {
                 <div className="md:w-[60%] mx-7  grid justify-items-center content-center  ">
                     <div className=" grid  text-primary z-10">
                         <p className={`${myFont.className} text-2xl  md:text-4xl lg:text-5xl`}>{`Welcome to the Star Group`}</p>
-                        <p className={`${myFont.className} text-xl md:text-3xl lg:text-4xl pt-2 md:pt-5 `}>{`An amalgamation,`}</p>
-                        <p className={`${myFont.className} text-xl md:text-3xl lg:text-4xl py-2 `}>{` of flourishing endeavors`}</p>
-                        {/* <div className="text-lg py-10 z-10">
-                            <p className={`${pTSans.className}`}>{`Star group: Elevating Experiences in Hospitality,`}</p>
-                            <p className={`${pTSans.className}`}>{`Cosmetology, and IT Staffing!`}</p>
+                        <p className={`${techsans.className} text-xl md:text-2xl lg:text-3xl pt-2 md:py-5 `}>{`An amalgamation of flourishing endeavors`}</p>
+                        {/* <p className={`${techsans.className} text-xl md:text-2xl lg:text-3xl py-2 `}>{` `}</p> */}
+                        <p className={`${techsans.className} text-sm md:text-sm lg:text-lg `}>{` Spanning across hospitality, IT staffing, cosmetology, and more, we are committed to delivering excellence across industries. Each venture, a unique star in our galaxy, contributes to our unified vision. `}</p>
+                        {/* <div className="text-lg py-5 z-10">
+                            <button className={`${techsans.className} text-sm md:text-sm lg:text-base hover:to-blue-600 `}>{`Learn more about our values ->`}</button>
                         </div> */}
                     </div>
 

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Router from "next/router";
 import Link from "next/link";
 import localFont from "next/font/local";
+import logo from "../public/logo.svg"
 const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 
 const navigation = [
@@ -45,9 +46,8 @@ export default function Navbar() {
 
     return (
         <header
-            className={`fixed w-full z-50 md:py-5 top-0 left-0 bg-primary
-      `}
-        // ${scrolled ? "bg-black " : "bg-transparent"}
+            className={`fixed w-full z-50 md:py-5 top-0 left-0 bg-primary  ${scrolled ? "opacity-70 backdrop-blur-3xl" : ""}`}
+       
         >
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 " aria-label="Top">
                 <div className="w-full  sm:-mb-0 flex items-center justify-between">
@@ -62,10 +62,10 @@ export default function Navbar() {
                                             priority
                                             height={100}
                                             width={150}
-                                            // className="brightness-0 invert"
-                                            // className="lg:w-52 w-40 h-20"
+                                           
+                                            className="lg:w-52 w-40 h-20"
                                             alt="star-group Logo"
-                                            src={""}
+                                            src={logo}
                                         />
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@ export default function Navbar() {
 
                 <button
                     onClick={() => setIsOpen((prev) => !prev)}
-                    className="inline-flex  lg:hidden absolute top-10 md:top-8 right-4 ml-auto text-white"
+                    className="inline-flex  lg:hidden absolute top-7 md:top-10 right-4 ml-auto text-white"
                     aria-label="Menu Mobile Button"
                 >
                     <svg

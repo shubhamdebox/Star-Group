@@ -24,7 +24,7 @@ export default function about({data}:any) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-        <div className="mt-[6rem] md:mt-[8rem] ">
+        <div className=" md:mt-[6rem] ">
           <Info title="About Us"
             description="With the explosion of data in recent years, businesses are looking for ways to process and analyze vast amounts of data in real time. At Ventois, we have the expertise and state-of-the-art technology necessary to help businesses develop and implement big data platforms that can handle even the most complex data sets."></Info>
           <div className='relative'>

@@ -47,7 +47,7 @@ export default function Team2({ value }: any) {
                                                         height={200}
                                                         alt="Profile Image"
                                                         src={val.profileImage.url}
-                                                        className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                                                        className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 group-hover:brightness-50"
                                                     />
 
                                                     <div className="relative p-2 sm:p-2 lg:px-4 lg:py-4 overflow-hidden ">
