@@ -190,20 +190,11 @@ const Contact = () => {
                   <p className="text-sm md:text-base ">{`info@starsgroupinc.com`}</p>
                 </div>
                 <div className="flex items-center justify-center md:justify-start py-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-8 h-6 "
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                    />
-                  </svg>
+                 
+
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  className="w-8 h-6 " strokeWidth={0.5}>
+      <path d="M256 0c17.7 0 32 14.3 32 32v34.7c80.4 13.4 143.9 76.9 157.3 157.3H480c17.7 0 32 14.3 32 32s-14.3 32-32 32h-34.7c-13.4 80.4-76.9 143.9-157.3 157.3V480c0 17.7-14.3 32-32 32s-32-14.3-32-32v-34.7C143.6 431.9 80.1 368.4 66.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h34.7C80.1 143.6 143.6 80.1 224 66.7V32c0-17.7 14.3-32 32-32zM128 256a128 128 0 10256 0 128 128 0 10-256 0zm128-80a80 80 0 110 160 80 80 0 110-160z"></path>
+    </svg>
 
                   <p className="text-sm md:text-base ">{`2253 William Way
 Greenfield, IN 46140
@@ -215,7 +206,7 @@ Greenfield, IN 46140
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
+                    strokeWidth={1}
                     stroke="currentColor"
                     className="w-9 h-6 mt-[12px]"
                   >
