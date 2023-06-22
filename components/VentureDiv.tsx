@@ -92,7 +92,7 @@ export default function VentureDiv({ value }: any) {
                                     - {val.location}
                                   </p>
                                 </div>
-                                <div className="group-hover:transition group-hover:delay-300 group-hover:duration-300 group-hover:ease-in-out mt-32 group-hover:mt-32  group-hover:lg:mt-64 lg:w-[1000px] transition-all duration-300 ">
+                                <div className=" mt-32 group-hover:mt-32  group-hover:lg:mt-64 lg:w-[1000px] transition-all duration-300 ">
                                   <div className="lg:translate-y-8 transform opacity-100 lg:opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                                     <p
                                       className={`text-xl py-3 font-bold text-white ${myFont.className}`}

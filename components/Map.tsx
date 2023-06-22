@@ -131,7 +131,7 @@ const Map = ({ value }: any) => {
                             <a href={obj.websiteUrl} target="_blank">
                               <div className=" ">
                                 <Image
-                                  src={obj.mainImage.url}
+                                  src={obj?.mainImage?.url || "/"}
                                   alt={"website url"}
                                   width={100}
                                   height={30}
