@@ -76,7 +76,7 @@ export default function VentureDiv({ value }: any) {
                               <div className="w-[93%]  lg:border-2 border-r-transparent  border-l-transparent absolute border-t-transparent -top-[2px] left-0    lg:hidden group-hover:block"></div>
                                 <div className="absolute  lg:-top-2 backdrop-blur-sm ">
                                   <p
-                                    className={`text-xl font-medium uppercase tracking-widest text-lightblue ${myFont.className}`}
+                                    className={`text-xl font-medium  tracking-widest text-lightblue ${myFont.className}`}
                                   >
                                     {val.venturestatus}
                                   </p>
