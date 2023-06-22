@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { gql } from "@apollo/client";
-import client from "../utils/apolloClient";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import localFont from 'next/font/local'
-import { Inter, Manrope, PT_Sans, Tinos } from 'next/font/google'
+import {  Manrope   } from 'next/font/google'
 import linkden from "../public/linkedin.svg"
 
 const manrope = Manrope({ subsets: ['latin'], weight: "500" })
-const pTSans = PT_Sans({
-    subsets: [],
-    weight: "400"
-});
+
 
 const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)

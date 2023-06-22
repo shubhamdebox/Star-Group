@@ -20,7 +20,7 @@ export default function VentureDiv({ value }: any) {
         <>
           {data.length > 0 ? (
             <>
-              <div className="   ">
+              <div className="">
                 {data.map((val: any, index: any) => {
                   return (
                     <>

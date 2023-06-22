@@ -1,6 +1,5 @@
 import Info from '@/components/Info'
 import Colagecontainer from '@/components/Colagecontainer'
-import Team from '@/components/Team'
 import Center from '@/components/reusable/Center'
 import Toprightcorner from '@/components/reusable/Toprightcorner'
 import Bottom from '@/components/reusable/Bottom'

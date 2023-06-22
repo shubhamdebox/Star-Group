@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { gql } from "@apollo/client";
-import client from "../utils/apolloClient";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import localFont from 'next/font/local'

@@ -3,21 +3,13 @@ import Link from "next/link";
 import React from "react";
 import logo from "../public/logo.svg";
 import localFont from "next/font/local";
-// import { morgan, stan } from "@/pages/_app";
+
 const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 
 const Footer = () => {
   return (
     <div id="footer" className="bg-primary text-white py-8 relative" >
-      {/* <div className="pb-6 overflow-clip pt-8">
-        <Icon />
-      </div> */}
-       {/* <div className="max-w-6xl mx-auto bg-[#C7CECF] ">
-          <div className=" flex justify-center text-center py-10 text-black text-2xl">
-             <p>{`"Where `}</p><span className="px-1">{` Hospitality,`}</span><span className="px-1">{` Expertise,`}</span>
-             <span className="px-1">{` and`}</span><span className="px-1">{` Style Converge"`}</span>
-          </div>
-        </div>  */}
+      
       <div className="grid md:grid-cols-3 grid-cols-1 max-w-6xl mx-auto  gap-10 pt-8 w-11/12 ">
        
         <div className=" ">

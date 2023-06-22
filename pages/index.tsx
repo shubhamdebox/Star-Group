@@ -1,8 +1,3 @@
-import Image from 'next/image'
-import { Inter, Manrope } from 'next/font/google'
-import Info from '@/components/Info'
-import Colagecontainer from '@/components/Colagecontainer'
-import Team from '@/components/Team'
 import Hero from '@/components/Hero'
 import client from '@/utils/apolloClient'
 import { gql } from '@apollo/client'

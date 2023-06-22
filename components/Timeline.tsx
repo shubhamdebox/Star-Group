@@ -1,5 +1,4 @@
 import localFont from 'next/font/local'
-import React, { useEffect } from 'react'
 import Image from 'next/image'
 const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)
