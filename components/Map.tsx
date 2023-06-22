@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import localFont from "next/font/local";
 
+
 const myFont = localFont({ src: '../public/nimbussandext.ttf' })
 const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)
 
@@ -63,35 +64,35 @@ const Map = ({ value }: any) => {
               zoomOnClick={true}
               styles={[
                 {
-                  url: "../public/cluster/m1.png",
+                  url: "/cluster/m1.png",
                   height: 26,
                   width: 26,
                   fontFamily: "Lato",
                   textColor: "#FFF",
                 },
                 {
-                  url: "../public/cluster/m2.png",
+                  url: "/cluster/m2.png",
                   height: 29,
                   width: 29,
                   fontFamily: "Lato",
                   textColor: "#FFF",
                 },
                 {
-                  url: "../public/cluster/m3.png",
+                  url: "/cluster/m3.png",
                   height: 34,
                   width: 34,
                   fontFamily: "Lato",
                   textColor: "#FFF",
                 },
                 {
-                  url: "../public/cluster/m4.png",
+                  url: "/cluster/m4.png",
                   height: 40,
                   width: 40,
                   fontFamily: "Lato",
                   textColor: "#FFF",
                 },
                 {
-                  url: "../public/cluster/m5.png",
+                  url: "/cluster/m5.png",
                   height: 46,
                   width: 46,
                   fontFamily: "Lato",
