@@ -10,10 +10,10 @@ export default function ventures({ data, data2 }: any) {
     <>
       <div>
         <Head>
-          <title>{`Star-Group Ventures`}</title>
+          <title>{`Our Ventures | Star Group's Diverse Portfolio`}</title>
           <meta
             name="description"
-            content=""
+            content="Browse Star Group's range of successful ventures across hospitality, housing, and more. Witness the innovation and excellence that unify our diverse portfolio."
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.png" />

@@ -16,10 +16,10 @@ export default function about({data}:any) {
     <>
       <div className=''>
       <Head>
-        <title>{`Star-Group About Us`}</title>
+        <title>{`About Star Group | Our Mission, Vision & Values`}</title>
         <meta
           name="description"
-          content=""
+          content="Discover the history of Star Group, our mission, vision, and the core values that guide us. Learn how we are making a difference across multiple sectors."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />

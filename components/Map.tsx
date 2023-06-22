@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   GoogleMap,
   MarkerF,
@@ -14,7 +14,7 @@ import localFont from "next/font/local";
 
 
 const myFont = localFont({ src: '../public/nimbussandext.ttf' })
-const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)
+
 
 const Map = ({ value }: any) => {
   const { isLoaded } = useJsApiLoader({
@@ -127,17 +127,23 @@ const Map = ({ value }: any) => {
                             lng: obj.geolocation.longitude,
                           }}
                         >
-                          <div className="w-full h-full">
+                          <div className=" ">
                             <a href={obj.websiteUrl} target="_blank">
-                              <div className=" ">
+                              <div className="flex space-x-2">
+                                <div>
                                 <Image
                                   src={obj?.mainImage?.url || "/"}
                                   alt={"website url"}
-                                  width={100}
-                                  height={30}
+                                  width={150}
+                                  height={40}
+                                
                                 />
+                                </div>
+                                <div className="flex flex-col space-y-2">
                                 <p className="font-bold">{obj.ventureName}</p>
-                                <p>{obj.venturestatus}</p>
+                                {obj.venturestatus != "Active" ? <p>{obj.venturestatus}</p> : ""}
+                                <p>{obj.about}</p>
+                                </div>
                               </div>
                             </a>
                           </div>

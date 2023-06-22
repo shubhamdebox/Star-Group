@@ -10,29 +10,29 @@ import Center from '@/components/reusable/Center'
 import Map from "../components/Map"
 import Head from 'next/head'
 
-export default function Home({ data , data2 }: any) {
+export default function Home({ data, data2 }: any) {
   return (
     <>
-     <Head>
-        <title>{`Star-Group Home`}</title>
+      <Head>
+        <title>{`Star Group | Leading Ventures in Hospitality, IT Staffing, and More`}</title>
         <meta
           name="description"
-          content=""
+          content="Explore Star Group's diverse portfolio of ventures spanning hospitality,IT Staffing, Cosmetology and more."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <div className='md:mt-[8rem] mt-24 '>
         <div className='relative'>
-          <Topline/>
-          <Toprightcorner/>
-          <Center/>
-          <Bottomline/>
+          <Topline />
+          <Toprightcorner />
+          <Center />
+          <Bottomline />
           <Hero data={data} />
         </div>
         <Homegridcon />
         <Services />
-        <Map value={data2}/>
+        <Map value={data2} />
       </div>
     </>
   )
@@ -54,7 +54,7 @@ export async function getStaticProps() {
     `,
   });
 
-  const { data : data2  } = await client.query({
+  const { data: data2 } = await client.query({
     query: gql`
     query MyQuery {
       ventures {
@@ -85,7 +85,7 @@ export async function getStaticProps() {
   return {
     props: {
       data: data,
-      data2 : data2
+      data2: data2
     },
   };
 }

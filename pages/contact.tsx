@@ -5,7 +5,9 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import Info from "@/components/Info";
 import Head from "next/head";
-
+import localFont from "next/font/local";
+const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)
+const myFont = localFont({ src: "../public/nimbussandext.ttf" });
 const variants = {
   fadeIn: {
     x: 100,
@@ -143,10 +145,10 @@ const Contact = () => {
   return (
     <>
      <Head>
-        <title>{`Star-Group Contact-Us`}</title>
+        <title>{`Contact | Get in Touch with us`}</title>
         <meta
           name="description"
-          content=""
+          content="Have a question or want to learn more about Star Group's ventures? Contact us today to connect with our team. We'd love to hear from you."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
@@ -160,16 +162,16 @@ const Contact = () => {
         <div className="max-w-screen-xl   grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-gray-900 rounded-lg ">
           <div className="flex flex-col justify-start">
             <div className=" mb-8">
-              <h2 className="text-xl lg:text-3xl font-bold leading-tight md:text-left text-center">
+              <h2 className={`text-xl lg:text-3xl font-bold leading-tight md:text-left text-center ${myFont.className}`}>
                 Contact Details
               </h2>
             </div>
             <div>
-              <h2 className="text-lg md:text-xl font-bold md:text-left text-center ">
+              <h2 className={`text-lg md:text-xl font-bold md:text-left text-center ${myFont.className}`}>
                 {" "}
                Office
               </h2>
-              <div className="flex items-center justify-center md:justify-start">
+              <div className="flex items-center justify-center md:justify-start py-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

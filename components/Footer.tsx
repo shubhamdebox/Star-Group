@@ -31,18 +31,18 @@ const Footer = () => {
             href="mailto:info@starsgroupinc.com"
             className=""> info@starsgroupinc.com</Link>
         </div>
-        <div className="">
+        <div className={`${myFont.className}`}>
           <h2 className={`pb-4 text-2xl md:text-4xl `}>
             Quick Links
           </h2>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1">
             <div className="text-xl flex  items-center gap-2">
 
               <Link href="/" className="">
                 Gallery
               </Link>
             </div>
-            <div className="text-xl flex  items-center gap-2 py-2">
+            <div className="text-xl flex  items-center gap-2 py-1">
 
               <Link
                 href="/About"
@@ -51,7 +51,7 @@ const Footer = () => {
                 About us
               </Link>
             </div>
-            <div className="text-xl flex  items-center gap-2 py-2">
+            <div className="text-xl flex  items-center gap-2 py-1">
 
               <Link
                 href="/Contactus"

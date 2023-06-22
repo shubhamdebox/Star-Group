@@ -1,6 +1,5 @@
-import client from "@/utils/apolloClient";
-import { gql } from "@apollo/client";
-import { useEffect, useState } from "react";
+
+import {  useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import bottom from "../public/bottom.svg";
@@ -72,14 +71,16 @@ export default function VentureDiv({ value }: any) {
                               <p className={`${myFont.className}`}>Explore</p>
                             </div>
                             <div className="relative p-4 sm:p-6 lg:p-8 group-hover:transition group-hover:delay-300 group-hover:duration-300 group-hover:ease-in-out">
-                              <div className="border-2 border-r-0 lg:border-0 group-hover:border-2 py-2 px-3 group-hover:border-r-0 ">
-                                <div className="absolute top-2 md:top-4 lg:top-6 backdrop-blur-sm ">
+                              <div className="relative border-2 border-r-0 lg:border-0 group-hover:border-2 py-2 px-3 group-hover:border-r-0 lg:group-hover:border-t-0">
+                                
+                              <div className="w-[93%]  lg:border-2 border-r-transparent  border-l-transparent absolute border-t-transparent -top-[2px] left-0    lg:hidden group-hover:block"></div>
+                                <div className="absolute  lg:-top-2 backdrop-blur-sm ">
                                   <p
                                     className={`text-xl font-medium uppercase tracking-widest text-lightblue ${myFont.className}`}
                                   >
                                     {val.venturestatus}
                                   </p>
-
+                                  
                                   <p
                                     className={`text-xl font-bold text-white sm:text-2xl py-2 ${myFont.className}`}
                                   >
