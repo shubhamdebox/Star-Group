@@ -32,7 +32,7 @@ const Footer = () => {
             className=""> info@starsgroupinc.com</Link>
         </div>
         <div className={`${myFont.className}`}>
-          <h2 className={`pb-4 text-2xl md:text-4xl `}>
+          <h2 className={`pb-6 md:pb-7 text-2xl md:text-4xl `}>
             Quick Links
           </h2>
           <div className="flex flex-col gap-1">

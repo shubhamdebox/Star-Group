@@ -78,7 +78,7 @@ export default function Navbar() {
                                     
                                     <Link
                                     key={navItem.name}
-                                        className="relative font-medium border-bordercolor focus:border-b-2 focus:ring-bordercolor text-white before:absolute before:-bottom-1 before:h-0.5 before:w-full before:scale-x-0 before:bg-bordercolor before:transition hover:before:scale-x-100"
+                                        className="relative font-medium border-bordercolor focus:border-b-2 focus:ring-bordercolor text-white before:absolute before:-bottom-0 before:h-0.5 before:w-full before:scale-x-0 before:bg-bordercolor before:transition hover:before:scale-x-100"
                                         href={navItem.href}
                                     >
                                         {navItem.name}
