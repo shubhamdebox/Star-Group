@@ -134,8 +134,8 @@ const Map = ({ value }: any) => {
                                   src={obj?.mainImage?.url || "/"}
                                   alt={"website url"}
                                   width={150}
-                                  height={40}
-                                
+                                  height={0}
+                                   className="h-full"
                                 />
                                 </div>
                                 <div className="flex flex-col space-y-2">
