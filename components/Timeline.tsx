@@ -19,8 +19,10 @@ const Timeline = () => {
 
     return (
         <div className='max-w-7xl  mx-auto py-10 overflow-x-hidden' >
-            <div className={`grid justify-center items-center pb-10 ${myFont.className}`} data-aos="fade-up"  >
+            <div className={`grid justify-center items-center text-center pb-10 ${myFont.className}`} data-aos="fade-up"  >
                 <span className='text-4xl lg:text-5xl'>Timeline</span>
+                <p className={`${techsans.className} py-5 text-xl`}>{`Here's our a journey through time, tracing the remarkable milestones of Star Group. 
+From our humble beginnings in 2002 with American Star Alliance, we have grown and diversified into a multifaceted conglomerate.`}</p>
             </div>
             <div className='md:flex md:flex-col space-y-5  md:space-y-12 px-5 md:px-20 lg:px-60 '  >
                 {data.map((val: any, index) => {
