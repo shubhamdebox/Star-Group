@@ -28,7 +28,7 @@ export default function Team2({ value }: any) {
                         <span className={`text-4xl lg:text-5xl ${myFont.className}`}>{`Team`}</span>
                     </div>
                     <div className="justify-center text-center py-6 ">
-                        <span className={`${techsans.className} text-sm lg:text-xl`}>{`Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat debitis aperiam rem id earum accusamus incidunt. Consequuntur dolor eaque alias. Ducimus, fugit ratione dolore aliquid dolorem ea unde sint nobis explicabo, facilis, soluta commodi.`}</span>
+                        <span className={`${techsans.className} text-sm lg:text-xl`}>{`At Star Group, it's the people that make us who we are. We believe in fostering a culture of collaboration, innovation, and shared success. Our team members, each bringing their unique talents and perspectives, work together to uphold our commitment to excellence across all ventures.`}</span>
                     </div>
                 </div>
                 {/* content div ends*/}
@@ -56,13 +56,13 @@ export default function Team2({ value }: any) {
                                                             <div className="w-3 border-2 border-b-transparent absolute  top-2 left-2 lg:top-4 lg:left-4 lg:hidden group-hover:block"></div>
 
                                                             <div className="w-[70%]  border-2 border-r-transparent  border-l-transparent absolute border-t-transparent bottom-[8px] left-2 lg:bottom-4 lg:left-4  lg:hidden group-hover:block">
-                                                          
-                                                            <div className="px-1 opacity-100  group-hover:opacity-100 absolute  -right-7 -top-2">
-                                                                <Link href={val.linkedInUrl} className="text-white bg-black">
-                                                                    <Image src={linkden} alt={"Linkden Logo"} width={20} />
-                                                                </Link>
-                                                            </div>
-                                                           
+
+                                                                <div className="px-1 opacity-100  group-hover:opacity-100 absolute  -right-7 -top-2">
+                                                                    <Link href={val.linkedInUrl} className="text-white bg-black">
+                                                                        <Image src={linkden} alt={"Linkden Logo"} width={20} />
+                                                                    </Link>
+                                                                </div>
+
                                                             </div>
 
                                                             <div className="absolute  top-0 lg:top-3 z-20   left-7   ">
@@ -81,7 +81,7 @@ export default function Team2({ value }: any) {
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>

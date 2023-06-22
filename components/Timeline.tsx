@@ -8,12 +8,12 @@ import 'aos/dist/aos.css';
 const Timeline = () => {
  
     let data = [
-        { image: img, year: "2001", title: "New Title", content: "American Star Alliance is born and is the first subsidiary of the The Star Group" },
-        { image: img, year: "2003", title: "New Title", content: "StarGlow Salon is The Star Group's foray into the wellness space" },
-        { image: img, year: "2006", title: "New Title", content: "Holiday Inn in Crawfordsville, IN is The Star Group's first commercial real estate property" },
-        { image: img, year: "2012", title: "New Title", content: "Holiday Inn in Greenfield, IN" },
-        { image: img, year: "2019", title: "New Title", content: "Fairfield Inn in Greenfield, IN" },
-        { image: img, year: " 2023", title: "New Title", content: "The Nest in Greenfield, IN" },
+        { image: img, year: "2002", title: "Birth of American Star Alliance", content: "American Star Alliance was established, marking our initial foray into the IT sector, with a special emphasis on manpower consultancy." },
+        { image: img, year: "2006", title: "Acquisition of our First Hotel - The Holiday Inn, Crawfordsville", content: "Our journey into the hospitality industry began with the acquisition of the Holiday Inn in Crawfordsville." },
+        { image: img, year: "2009", title: "Establishment of the Holiday Inn Express, Crawfordsville", content: "The year saw the ground-up construction of the Holiday Inn Express in Crawfordsville, expanding our footprint in the hotel industry." },
+        { image: img, year: "2012", title: "Launch of the Holiday Inn Express, Greenfield ", content: "Continuing our expansion, the Holiday Inn Express in Greenfield was set up." },
+        { image: img, year: "2019", title: "Arrival of Fairfield Inn by Marriott", content: "Adding to our diversifying hotel portfolio, the Fairfield Inn by Marriott was established.        " },
+        { image: img, year: "2023", title: "Unveiling of The Nest", content: "The Nest, our latest venture, opened its doors, signifying the ongoing growth of the Star Group's hotel portfolio." },
     ]
 
 

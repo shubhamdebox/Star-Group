@@ -153,8 +153,8 @@ const Contact = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className="mt-24 md:mt-28">
-        <Info title={"Contact Us"} description={"With the explosion of data in recent years, businesses are looking for ways to process and analyze vast amounts of data in real time."} />
+      <div className="mt-20 md:mt-28">
+        <Info title={"Contact Us"} description={"Connect with Us!"} />
         <div className="z-50">
           <Toaster />
         </div>
@@ -167,10 +167,7 @@ const Contact = () => {
                 </h2>
               </div>
               <div className={`${techsans.className}`}>
-                <h2 className={`text-lg md:text-xl font-bold md:text-left text-center ${myFont.className}`}>
-                  {" "}
-                  Office
-                </h2>
+              
                 <div className="flex items-center justify-center md:justify-start py-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -190,13 +187,12 @@ const Contact = () => {
                   <p className="text-sm md:text-base ">{`info@starsgroupinc.com`}</p>
                 </div>
                 <div className="flex items-center justify-center md:justify-start py-2">
-                 
 
-                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  className="w-8 h-6 " strokeWidth={0.5}>
-      <path d="M256 0c17.7 0 32 14.3 32 32v34.7c80.4 13.4 143.9 76.9 157.3 157.3H480c17.7 0 32 14.3 32 32s-14.3 32-32 32h-34.7c-13.4 80.4-76.9 143.9-157.3 157.3V480c0 17.7-14.3 32-32 32s-32-14.3-32-32v-34.7C143.6 431.9 80.1 368.4 66.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h34.7C80.1 143.6 143.6 80.1 224 66.7V32c0-17.7 14.3-32 32-32zM128 256a128 128 0 10256 0 128 128 0 10-256 0zm128-80a80 80 0 110 160 80 80 0 110-160z"></path>
-    </svg>
 
-                  <p className="text-sm md:text-base ">{`2253 William Way
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512 " className=" px-1">
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192 384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2 12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 110 128 64 64 0 110-128z"></path>
+                  </svg>
+                  <p className="text-sm md:text-base">{`2253 William Way
 Greenfield, IN 46140
 
 `}</p>
@@ -280,7 +276,7 @@ Greenfield, IN 46140
                       First Name
                     </label>
                     <input
-                      className="w-full text-gray-900 border-2 border-black mt-2 p-2  focus:outline-none focus:shadow-outline"
+                      className="w-full text-gray-900 border-2 border-gray-600 mt-2 p-2  focus:outline-none focus:shadow-outline"
                       type="text"
                       name="firstName"
                       value={contactData.firstName}
@@ -303,7 +299,7 @@ Greenfield, IN 46140
                       Last Name
                     </label>
                     <input
-                      className="w-full  text-gray-900  border-2 border-black mt-2 p-2  focus:outline-none focus:shadow-outline"
+                      className="w-full  text-gray-900  border-2 border-gray-600 mt-2 p-2  focus:outline-none focus:shadow-outline"
                       type="text"
                       name="lastName"
                       value={contactData.lastName}
@@ -328,7 +324,7 @@ Greenfield, IN 46140
                       Email
                     </label>
                     <input
-                      className="w-full  text-gray-900  border-2 border-black mt-2 p-2  focus:outline-none focus:shadow-outline"
+                      className="w-full  text-gray-900  border-2 border-gray-600 mt-2 p-2  focus:outline-none focus:shadow-outline"
                       id="email"
                       name="email"
                       value={contactData.email}
@@ -362,7 +358,7 @@ Greenfield, IN 46140
                       value={contactData.phone}
                       country={"us"}
                       inputClass="!w-full !py-6  !mt-2 !text-gray-900  !focus:outline-none !focus:shadow-outline !border-transparent "
-                      containerClass="!text-black  !border-black !border-l-2 !border-r-2 !border-b-2 !border-t-2"
+                      containerClass="!text-black  !border-gray-600 !border-l-2 !border-r-2 !border-b-2 !border-t-2"
                     />
                   </div>
                 </div>
@@ -374,7 +370,7 @@ Greenfield, IN 46140
                     Type your query
                   </label>
                   <textarea
-                    className="w-full h-32 border-2 border-black text-gray-900 mt-2 p-3  focus:outline-none focus:shadow-outline"
+                    className="w-full h-32 border-2 border-gray-600 text-gray-900 mt-2 p-3  focus:outline-none focus:shadow-outline"
                     id="message"
                     name="message"
                     value={contactData.message}
@@ -392,7 +388,7 @@ Greenfield, IN 46140
                 <div className="">
                   <button
                     onClick={handleSubmit}
-                    className="w-[50%] text-sm font-bold tracking-wide bg-white hover:bg-primary hover:text-white  border-2 border-black text-black duration-200  p-2 focus:outline-none focus:shadow-outline"
+                    className="w-[50%] text-sm font-bold tracking-wide bg-white hover:bg-primary hover:text-white  border-2 border-gray-600 text-black duration-200  p-2 focus:outline-none focus:shadow-outline"
                   >
                     Submit
                   </button>

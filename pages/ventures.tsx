@@ -20,7 +20,7 @@ export default function ventures({ data, data2 }: any) {
         </Head>
         <div className="md:mt-[6rem]">
           <Info title="Ventures"
-            description="With the explosion of data in recent years, businesses are looking for ways to process and analyze vast amounts of data in real time. At Ventois, we have the expertise and state-of-the-art technology necessary to help businesses develop and implement big data platforms that can handle even the most complex data sets."></Info>
+            description="Explore the Diverse Businesses within Star Group's Portfolio."></Info>
         </div>
         <VentureDiv value={data2} />
         <Gallery value={data} />
