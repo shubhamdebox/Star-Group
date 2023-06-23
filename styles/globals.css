@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #60a494 #000000;
+}
 
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
 
-.bg-div {
-  background-image: url('../public/QA.webp');
-  background-size: cover; /* Optional: Adjust the background size */
-  background-repeat: no-repeat; /* Optional: Adjust the background repeat */
-  background-position: center; /* Optional: Adjust the background position */
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #60a494;
+  border-radius: 2px;
+  border: 3px none #ffffff;
 }

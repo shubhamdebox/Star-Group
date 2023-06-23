@@ -6,7 +6,10 @@ import "react-phone-input-2/lib/style.css";
 import Info from "@/components/Info";
 import Head from "next/head";
 import localFont from "next/font/local";
-const techsans = localFont({ src: '../public/Technique+Sans.otf', weight: "400" },)
+const techsans = localFont({
+  src: "../public/Technique+Sans.otf",
+  weight: "400",
+});
 const myFont = localFont({ src: "../public/nimbussandext.ttf" });
 const variants = {
   fadeIn: {
@@ -35,39 +38,6 @@ const variants = {
   },
 };
 
-const location = [
-  {
-    office: "USA Office",
-    address:
-      "Ventois Software Solutions Private Limited 2nd floor, Plot no 1, SEZ ITpark, Madikonda, Kazipet, Warangal 506142 India",
-    loc: () => {
-      return (
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d184.50808991450066!2d-71.72960837149056!3d42.27576023429098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e40858f5f69497%3A0x9e481d41d216c433!2sVentois%2C%20Inc!5e0!3m2!1sen!2sca!4v1673621728454!5m2!1sen!2sca"
-          className="border-none rounded-lg w-full h-[500px]"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      );
-    },
-  },
-  {
-    office: "India Office",
-    address:
-      "Ventois Software Solutions Private Limited 2nd floor, Plot no 1, SEZ ITpark, Madikonda, Kazipet, Warangal 506142 India",
-    loc: () => {
-      return (
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.620358092527!2d79.46627351496599!3d17.949852587743862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f61e1a7d66b%3A0xafc92102b0fa0af0!2sVentois%20Software%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1677233035329!5m2!1sen!2sin"
-          className="border-none rounded-lg w-full h-[500px]"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      );
-    },
-  },
-];
-
 const Contact = () => {
   interface contactType {
     firstName: string;
@@ -77,12 +47,7 @@ const Contact = () => {
     message: string;
   }
   const [index, setIndex] = useState<any>(0);
-  const [data, setData] = useState<any>(location[index]);
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setData(location[index]);
-  }, [index]);
 
   const [contactData, setContactData] = useState<contactType>({
     firstName: "",
@@ -129,7 +94,6 @@ const Contact = () => {
           { duration: 3000 }
         );
       } catch (e) {
-
         toast.error("Something went wrong. Please try again later.");
       }
     }
@@ -151,7 +115,6 @@ const Contact = () => {
           content="Have a question or want to learn more about Star Group's ventures? Contact us today to connect with our team. We'd love to hear from you."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
       </Head>
       <div className="mt-20 md:mt-28">
         <Info title={"Contact Us"} description={"Connect with Us!"} />
@@ -162,12 +125,13 @@ const Contact = () => {
           <div className="max-w-screen-xl   grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto  text-gray-900 rounded-lg ">
             <div className="flex flex-col justify-start">
               <div className=" mb-8">
-                <h2 className={`text-xl lg:text-3xl font-bold leading-tight md:text-left text-center ${myFont.className}`}>
+                <h2
+                  className={`text-xl lg:text-3xl font-bold leading-tight md:text-left text-center ${myFont.className}`}
+                >
                   Contact Details
                 </h2>
               </div>
               <div className={`${techsans.className}`}>
-              
                 <div className="flex items-center justify-center md:justify-start py-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -187,9 +151,12 @@ const Contact = () => {
                   <p className="text-sm md:text-base ">{`info@starsgroupinc.com`}</p>
                 </div>
                 <div className="flex items-center justify-center md:justify-start py-2">
-
-
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512 " className=" px-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.5em"
+                    viewBox="0 0 384 512 "
+                    className=" px-1"
+                  >
                     <path d="M215.7 499.2C267 435 384 279.4 384 192 384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2 12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 110 128 64 64 0 110-128z"></path>
                   </svg>
                   <p className="text-sm md:text-base">{`2253 William Way
@@ -215,47 +182,6 @@ Greenfield, IN 46140
                   <p className="text-sm md:text-base pt-3">{`+1 (908) 625-2228`}</p>
                 </div>
               </div>
-              {/* <div>
-              <h2 className="text-lg md:text-xl font-bold md:text-left text-center py-6">
-                {" "}
-                India Office
-              </h2>
-              <div className="flex items-center justify-center md:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-8 h-6 "
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                  />
-                </svg>
-
-                <p className="text-sm md:text-base ">contact@ventois.com</p>
-              </div>
-              <div className="flex items-center justify-center md:justify-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-9 h-6 mt-[12px]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                  />
-                </svg>
-                <p className="text-sm md:text-base pt-3">+91 7893889950</p>
-              </div>
-            </div> */}
             </div>
             <div className="">
               <h2 className="text-center font-bold text-xl py-4 md:hidden">
@@ -316,10 +242,11 @@ Greenfield, IN 46140
                   </div>
                 </div>
 
-
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                   <div className="">
-                    <span className=" text-sm text-gray-600 font-bold">Email</span>
+                    <span className=" text-sm text-gray-600 font-bold">
+                      Email
+                    </span>
                     <label htmlFor="email" className="sr-only">
                       Email
                     </label>
@@ -341,8 +268,10 @@ Greenfield, IN 46140
                   </div>
 
                   <div className="">
-                    <span className=" text-sm text-gray-600 font-bold ">Phone</span>
-                    <label htmlFor="email" className="sr-only" >
+                    <span className=" text-sm text-gray-600 font-bold ">
+                      Phone
+                    </span>
+                    <label htmlFor="email" className="sr-only">
                       Phone
                     </label>
                     <PhoneInput
@@ -397,7 +326,6 @@ Greenfield, IN 46140
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
