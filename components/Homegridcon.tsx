@@ -49,7 +49,7 @@ export default function homegridcon() {
           </div>
           <p className="pb-8 md:text-xl text-center">
             {
-              "At Star Group, we're driven by more than just our business pursuits. We operate under a set of core values that shape our decisions, guide our operations, and cultivate our company culture."
+              "At Star Group, we're driven by more than just our business pursuits.   We operate under a set of core values that shape our decisions, guide our operations, and cultivate our company culture."
             }
           </p>
           <div className="md:grid md:grid-cols-2 grid gap-5 ">

@@ -65,47 +65,39 @@ export default function Colagecontainer() {
                 Core Values
               </p>
               {data.map((data: any, index: any) => (
-                <>
-                  <div key={data.title}>
-                    <span className={` text-lg lg:text-xl font-bold`}>
-                      {data.title}
-                    </span>
-                    <div className="py-2">
-                      {/* <span className={` text-2xl ${tinos.className}`}>{data.title2}</span> */}
-                      <div className="">
-                        <p
-                          className={`${techsans.className} text-sm lg:text-base px-4`}
-                        >
-                          {data.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col space-y-5">
-            {data2.map((data: any) => (
-              <>
-                <div
-                  className="bg-secondary p-4 border-2 shadow-[6px_8px_0px_0px_#1a202c] z-10"
-                  key={data.title}
-                >
-                  <span className={`text-2xl lg:text-3xl ${myFont.className}`}>
+                <div key={data.title}>
+                  <span className={` text-lg lg:text-xl font-bold`}>
                     {data.title}
                   </span>
-                  <div className="py-4">
-                    <div className="py-3">
-                      <p
-                        className={`${techsans.className} text-sm lg:text-base`}
-                      >
+                  <div className="py-2">
+                    {/* <span className={` text-2xl ${tinos.className}`}>{data.title2}</span> */}
+                    <div className="">
+                      <p className={`${techsans.className} lg:text-base px-4`}>
                         {data.description}
                       </p>
                     </div>
                   </div>
                 </div>
-              </>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col space-y-5">
+            {data2.map((data: any) => (
+              <div
+                className="bg-secondary p-4 border-2 shadow-[6px_8px_0px_0px_#1a202c] z-10"
+                key={data.title}
+              >
+                <span className={`text-2xl lg:text-3xl ${myFont.className}`}>
+                  {data.title}
+                </span>
+                <div className="py-4">
+                  <div className="py-3">
+                    <p className={`${techsans.className} lg:text-base`}>
+                      {data.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -62,48 +62,46 @@ const Timeline = () => {
       >
         <span className="text-4xl lg:text-5xl">Our Journey</span>
         <p
-          className={`${techsans.className} py-5 text-xl max-w-5xl`}
+          className={`${techsans.className} py-5 max-w-5xl`}
         >{`Here's our a journey through time, tracing the remarkable milestones of Star Group. 
 From our humble beginnings in 2002 with American Star Alliance, we have grown and diversified into a multifaceted conglomerate.`}</p>
       </div>
       <div className="md:flex md:flex-col space-y-5  md:space-y-12 px-5 md:px-20 lg:px-60 ">
         {data.map((val: any, index) => {
           return (
-            <>
-              <div className={` `} key={index}>
-                <div
-                  className={`${
-                    index % 2 == 0
-                      ? "md:flex row  "
-                      : "md:flex md:flex-row-reverse "
-                  }`}
-                  data-aos-duration="1500"
-                  data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}
-                >
-                  <div className="">
-                    <Image
-                      src={val.image}
-                      alt={"Timeline Images"}
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[100%] md:w-[600px]"
-                    ></Image>
-                  </div>
-                  <div className=" flex flex-col space-y-4 md:w-[70%] py-5 px-4">
-                    <p
-                      className={`font-bold ${techsans.className} md:text-2xl`}
-                    >{` ${val.year}`}</p>
-                    <p
-                      className={`font-bold ${techsans.className} md:text-xl`}
-                    >{` ${val.title}`}</p>
-                    <p
-                      className={`font-bold ${techsans.className}`}
-                    >{` ${val.content} `}</p>
-                  </div>
+            <div className={` `} key={index}>
+              <div
+                className={`${
+                  index % 2 == 0
+                    ? "md:flex row  "
+                    : "md:flex md:flex-row-reverse "
+                }`}
+                data-aos-duration="1500"
+                data-aos={`${index % 2 == 0 ? "fade-left" : "fade-right"}`}
+              >
+                <div className="">
+                  <Image
+                    src={val.image}
+                    alt={"Timeline Images"}
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-[100%] md:w-[600px]"
+                  ></Image>
+                </div>
+                <div className=" flex flex-col space-y-4 md:w-[70%] py-5 px-4">
+                  <p
+                    className={`font-bold ${techsans.className} md:text-2xl`}
+                  >{` ${val.year}`}</p>
+                  <p
+                    className={`font-bold ${techsans.className} md:text-xl`}
+                  >{` ${val.title}`}</p>
+                  <p
+                    className={`font-bold ${techsans.className}`}
+                  >{` ${val.content} `}</p>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

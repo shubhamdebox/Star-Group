@@ -45,71 +45,70 @@ export default function Team2({ value }: any) {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 md:p-5 gap-5">
                 {data.map((val: any, index: any) => {
                   return (
-                    <>
-                      <div className="   h-[400px] " key={index}>
-                        <div
-                          className={`group relative block bg-black  h-[400px]  `}
-                        >
-                          <Image
-                            width={200}
-                            height={200}
-                            alt="Profile Image"
-                            src={val.profileImage.url}
-                            className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 group-hover:brightness-50"
-                          />
+                    <div className="   h-[400px] " key={index}>
+                      <div
+                        className={`group relative block bg-black  h-[400px]  `}
+                      >
+                        <Image
+                          width={200}
+                          height={200}
+                          alt="Profile Image"
+                          src={val.profileImage.url}
+                          className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 group-hover:brightness-50"
+                        />
 
-                          <div className="relative p-2 sm:p-2 lg:px-4 lg:py-4 overflow-hidden ">
-                            <div
-                              className=" border-2 border-t-transparent border-r-transparent 
+                        <div className="relative p-2 sm:p-2 lg:px-4 lg:py-4 overflow-hidden ">
+                          <div
+                            className=" border-2 border-t-transparent border-r-transparent 
                                                             border-b-transparent lg:border-0 group-hover:border-2 group-hover:border-r-transparent z-10 "
-                            >
-                              <div className="w-3 border-2 border-b-transparent absolute  top-2 left-2 lg:top-4 lg:left-4 lg:hidden group-hover:block"></div>
+                          >
+                            <div className="w-3 border-2 border-b-transparent absolute  top-2 left-2 lg:top-4 lg:left-4 lg:hidden group-hover:block"></div>
 
-                              <div className="w-[70%]  border-2 border-r-transparent  border-l-transparent absolute border-t-transparent bottom-[8px] left-2 lg:bottom-4 lg:left-4  lg:hidden group-hover:block">
-                                <div className="px-1 opacity-100  group-hover:opacity-100 absolute  -right-7 -top-2">
-                                  <a
-                                    href={val.linkedInUrl}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="text-white bg-black"
-                                  >
-                                    <Image
-                                      src={linkden}
-                                      alt={"Linkden Logo"}
-                                      width={20}
-                                    />
-                                  </a>
-                                </div>
-                              </div>
-
-                              <div className="absolute  top-0 lg:top-3 z-20   left-7   ">
-                                <p
-                                  className={` ${manrope.className} px-1 text-sm  font-medium uppercase tlracking-widest text-lightblue`}
-                                  border-r-transparent
+                            <div className="w-[70%]  border-2 border-r-transparent  border-l-transparent absolute border-t-transparent bottom-[8px] left-2 lg:bottom-4 lg:left-4  lg:hidden group-hover:block">
+                              <div className="px-1 opacity-100  group-hover:opacity-100 absolute  -right-8 -top-2.5">
+                                <a
+                                  href={val.linkedInUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="text-white bg-black"
                                 >
-                                  {val.designation}
-                                </p>
-
-                                <p
-                                  className={`text-base  text-white ${myFont.className}`}
-                                >
-                                  {val.name}
-                                </p>
+                                  <Image
+                                    src={linkden}
+                                    alt={"Linkden Logo"}
+                                    width={20}
+                                    className=""
+                                  />
+                                </a>
                               </div>
-                              <div className="mt-32  p-4 h-[250px] md:h-[240px]">
-                                <div className="absolute bottom-7 left-3 translate-y-0 lg:translate-y-8 transform opacity-100 lg:opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                                  <p
-                                    className={`text-sm mt-12 p-1 md:p-3 text-white ${techsans.className}`}
-                                  >
-                                    {val?.shortDescription}
-                                  </p>
-                                </div>
+                            </div>
+
+                            <div className="absolute  top-0.5 lg:top-3 z-20   left-5   ">
+                              <p
+                                className={` ${manrope.className} px-1 text-sm  font-medium uppercase tlracking-widest text-lightblue`}
+                                border-r-transparent
+                              >
+                                {val.designation}
+                              </p>
+
+                              <p
+                                className={`text-base  text-white ${myFont.className}`}
+                              >
+                                {val.name}
+                              </p>
+                            </div>
+                            <div className="mt-32  p-4 h-[250px] md:h-[240px]">
+                              <div className="absolute bottom-7 left-3 translate-y-0 lg:translate-y-8 transform opacity-100 lg:opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                                <p
+                                  className={`text-sm mt-12 p-1 md:p-3 text-white ${techsans.className}`}
+                                >
+                                  {val?.shortDescription}
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </>
+                    </div>
                   );
                 })}
               </div>

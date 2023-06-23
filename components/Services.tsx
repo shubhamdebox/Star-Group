@@ -51,35 +51,31 @@ export default function Services() {
           >
             {data.map((value: any) => {
               return (
-                <>
-                  <div key={value.title}>
-                    <div className="py-10 grid justify-center text-center">
-                      <Image
-                        src={value.logo}
-                        alt={"Group of peoples"}
-                        className="h-14 "
-                      />
-                    </div>
-
-                    <span
-                      className={`text-2xl lg:text-4xl ${myFont.className}`}
-                    >
-                      {value.title}
-                    </span>
-
-                    <div className="">
-                      <p
-                        className={`text-5xl text-primary lg:text-6xl py-4 ${myFont.className}`}
-                      >
-                        <CountUp end={value?.value} duration={10} />
-                        {value.symbol}
-                      </p>
-                      <p className={`italic text-sm ${myFont.className}`}>
-                        {value.subtitle}
-                      </p>
-                    </div>
+                <div key={value.title}>
+                  <div className="py-10 grid justify-center text-center">
+                    <Image
+                      src={value.logo}
+                      alt={"Group of peoples"}
+                      className="h-14 "
+                    />
                   </div>
-                </>
+
+                  <span className={`text-2xl lg:text-4xl ${myFont.className}`}>
+                    {value.title}
+                  </span>
+
+                  <div className="">
+                    <p
+                      className={`text-5xl text-primary lg:text-6xl py-4 ${myFont.className}`}
+                    >
+                      <CountUp end={value?.value} duration={10} />
+                      {value.symbol}
+                    </p>
+                    <p className={`italic text-sm ${myFont.className}`}>
+                      {value.subtitle}
+                    </p>
+                  </div>
+                </div>
               );
             })}
           </div>

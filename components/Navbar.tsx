@@ -44,7 +44,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed w-full z-50 md:py-5 top-0 left-0  bg-primary/90 backdrop-blur-3xl`}
+      className={`fixed w-full z-50 md:py-5 top-0 left-0  bg-primary/90 backdrop-blur-3xl shadow-xl`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 " aria-label="Top">
         <div className="w-full  sm:-mb-0 flex items-center justify-between">
@@ -72,15 +72,13 @@ export default function Navbar() {
               className={`hidden gap-8  text-center items-center relative lg:flex `}
             >
               {navigation.map((navItem) => (
-                <>
-                  <Link
-                    key={navItem.name}
-                    className="relative font-medium border-bordercolor focus:border-b-2 focus:ring-bordercolor text-white before:absolute before:-bottom-0 before:h-0.5 before:w-full before:scale-x-0 before:bg-bordercolor before:transition hover:before:scale-x-100"
-                    href={navItem.href}
-                  >
-                    {navItem.name}
-                  </Link>
-                </>
+                <Link
+                  key={navItem.name}
+                  className="relative font-medium border-bordercolor focus:border-b-2 focus:ring-bordercolor text-white before:absolute before:-bottom-0 before:h-0.5 before:w-full before:scale-x-0 before:bg-bordercolor before:transition hover:before:scale-x-100"
+                  href={navItem.href}
+                >
+                  {navItem.name}
+                </Link>
               ))}
             </div>
           </div>
