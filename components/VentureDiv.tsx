@@ -23,7 +23,7 @@ export default function VentureDiv({ value }: any) {
                   return (
                     <div
                       className="py-3 lg:py-10 w-[100%]   "
-                      key={val.location}
+                      key={val.ventureName}
                     >
                       <div
                         className={`  ${
