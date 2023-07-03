@@ -28,7 +28,7 @@ export default function about({ data }: any) {
             title="About Us"
             description="Discover the Story Behind Our Success."
           ></Info>
-          <div className="relative">
+          <div className="relative ">
             <Toprightcorner />
             <Center />
             <Colagecontainer></Colagecontainer>
