@@ -29,7 +29,7 @@ const Map = ({ value }: any) => {
   });
 
   const [places, setPlaces] = useState<any[]>(value.ventures);
-  const [zoom, setZoom] = useState(7);
+  const [zoom, setZoom] = useState(6);
   const [selectedMarker, setSelectedMarker] = useState<string>("");
 
   return (
