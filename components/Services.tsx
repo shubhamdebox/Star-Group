@@ -52,7 +52,7 @@ export default function Services() {
             {data.map((value: any) => {
               return (
                 <div key={value.title}>
-                  <div className="py-10 grid justify-center text-center">
+                  <div className="py-10 grid justify-center text-center ">
                     <Image
                       src={value.logo}
                       alt={"Group of peoples"}
