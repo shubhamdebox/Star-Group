@@ -68,7 +68,11 @@ export default function Services() {
                     <p
                       className={`text-5xl text-primary lg:text-6xl py-4 ${myFont.className}`}
                     >
-                      <CountUp end={value?.value} duration={10} />
+                      <CountUp
+                        end={value?.value}
+                        enableScrollSpy
+                        duration={10}
+                      />
                       {value.symbol}
                     </p>
                     <p className={`italic text-sm ${myFont.className}`}>
