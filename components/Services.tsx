@@ -71,7 +71,7 @@ export default function Services() {
                       <CountUp
                         end={value?.value}
                         enableScrollSpy
-                        duration={10}
+                        duration={5}
                       />
                       {value.symbol}
                     </p>
