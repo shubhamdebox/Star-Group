@@ -33,7 +33,7 @@ export default function Team2({ value }: any) {
           </div>
           <div className="justify-center text-center py-6 ">
             <span
-              className={`${techsans.className} text-sm lg:text-xl`}
+              className={`${techsans.className} text-sm lg:text-base`}
             >{`At Star Group, it's the people that make us who we are. We believe in fostering a culture of collaboration, innovation, and shared success. Our team members, each bringing their unique talents and perspectives, work together to uphold our commitment to excellence across all ventures.`}</span>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Team2({ value }: any) {
 
                             <div className="w-[70%]  border-2 border-r-transparent  border-l-transparent absolute border-t-transparent bottom-[8px] left-2 lg:bottom-4 lg:left-4  lg:hidden group-hover:block">
                               <div className="px-1 opacity-100  group-hover:opacity-100 absolute  -right-8 -top-2.5">
-                                <a
+                                <Link
                                   href={val.linkedInUrl}
                                   target="_blank"
                                   rel="noreferrer"
@@ -78,14 +78,14 @@ export default function Team2({ value }: any) {
                                     width={20}
                                     className=""
                                   />
-                                </a>
+                                </Link>
                               </div>
                             </div>
 
-                            <div className="absolute  top-0.5 lg:top-3 z-20   left-5   ">
+                            <div className="absolute  top-0.5 lg:top-2  z-20   left-7   ">
                               <p
                                 className={` ${manrope.className} px-1 text-sm  font-medium uppercase tlracking-widest text-lightblue`}
-                                border-r-transparent
+                               
                               >
                                 {val.designation}
                               </p>

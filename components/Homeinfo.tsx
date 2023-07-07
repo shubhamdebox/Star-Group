@@ -24,9 +24,7 @@ const Homeinfo = () => {
             <div className={`lg:text-xl   px-5 ${techsans.className}`}>
               <span className="z-30">
                 {`Star Group is an amalgamation of flourishing endeavors that span across various sectors. 
-We pride ourselves on our diverse portfolio, ranging from high-end hotels like Star Nest, Holiday Inn Express, and Hilton, to IT staffing via American Star Alliance, and leading cosmetology services with StarGlow Salons. We extend our footprint into the real estate market with upscale apartment complexes, and we offer compassionate assisted living facilities. 
-Each venture is a shining example of our commitment to innovation, customer satisfaction, and excellence. 
-Explore our network of ventures, each one unique, yet united under the umbrella of the Star Group.`}
+We pride ourselves on our diverse portfolio, ranging from high-end hotels like Star Nest, Holiday Inn Express, and Hilton, to IT staffing via American Star Alliance, and leading cosmetology services with StarGlow Salons. `}
               </span>
             </div>
           </div>

@@ -35,7 +35,7 @@ const Map = ({ value }: any) => {
   return (
     <div className="">
       <div
-        className={`max-w-7xl mx-auto grid justify-center pt-10 text-center space-y-6`}
+        className={`max-w-7xl mx-auto grid justify-center pt-5 text-center space-y-6`}
       >
         <div className={`text-4xl  lg:text-5xl ${myFont.className}`}>
           <p>{`Our Reach`}</p>
@@ -140,7 +140,8 @@ const Map = ({ value }: any) => {
                                 }}
                               >
                                 <div className=" ">
-                                  <a href={obj.websiteUrl} target="_blank">
+                                  <Link href={obj.websiteUrl} target="_blank">
+                                    <>
                                     <div className="flex space-x-2">
                                       <div>
                                         <Image
@@ -169,7 +170,8 @@ const Map = ({ value }: any) => {
                                         </p>
                                       </div>
                                     </div>
-                                  </a>
+                                    </>
+                                  </Link>
                                 </div>
                               </InfoWindowF>
                             ) : null}

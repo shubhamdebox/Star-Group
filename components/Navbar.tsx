@@ -6,6 +6,9 @@ import Link from "next/link";
 import localFont from "next/font/local";
 import logo from "../public/logo.svg";
 
+import Hamburger from "hamburger-react";
+import NavItem from "./Navitem";
+
 const navigation = [
   { name: "About Us", href: "/about" },
   { name: "Ventures", href: "/ventures" },
@@ -47,20 +50,19 @@ export default function Navbar() {
       className={`fixed w-full z-50 md:py-5 top-0 left-0  bg-primary/90 backdrop-blur-3xl shadow-xl`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 " aria-label="Top">
-        <div className="w-full  sm:-mb-0 flex items-center justify-between">
+        <div className="w-full sm:-mb-0 flex items-center justify-between sm:px-6 lg:px-0">
           <div className="flex items-center justify-between w-full">
             <div className="mr-auto md:mx-0 ">
               <Link href="/">
                 <div className="cursor-pointer">
-                  <span className="sr-only">star-group</span>
-                  <div className="hover:scale-110 duration-300 transition-transform">
+                  
+                  <div className="hover:scale-110 duration-300 transition-transform py-4 flex justify-between">
                     {" "}
                     <Image
                       priority
                       height={100}
                       width={150}
-                      className="lg:w-52 w-40 h-20"
-                      alt="star-group Logo"
+                      alt="StarGroup logo"
                       src={logo}
                     />
                   </div>
@@ -68,9 +70,8 @@ export default function Navbar() {
               </Link>
             </div>
             {/* MD+ */}
-            <div
-              className={`hidden gap-8  text-center items-center relative lg:flex `}
-            >
+            <div className="hidden gap-8 text-center items-center relative lg:flex ">
+             
               {navigation.map((navItem) => (
                 <Link
                   key={navItem.name}
@@ -82,53 +83,54 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-        </div>
-        {/* PHONES -> TILL MD */}
-
-        <button
-          onClick={() => setIsOpen((prev) => !prev)}
-          className="inline-flex  lg:hidden absolute top-7 md:top-10 right-4 ml-auto text-white"
-          aria-label="Menu Mobile Button"
-        >
-          <svg
-            className="w-8 h-8 !fill-white"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
+          <div className="lg:hidden block">
+            <Hamburger
+              toggled={isOpen}
+              toggle={setIsOpen}
+              size={30}
+              rounded
+              color="white"
             />
-          </svg>
-        </button>
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } fixed transition-all top-0 left-0 w-full bg-black h-screen z-[100]  text-lg`}
-        >
-          <div className="flex justify-between">
-            <button
-              onClick={() => setIsOpen((prev) => !prev)}
-              className="absolute top-4 right-4 text-white text-5xl"
-              aria-label="Menu Mobile Button"
-            >
-              &times;
-            </button>
           </div>
-          <ul className="flex flex-col justify-center items-center gap-4 h-full pb-10 text-white">
-            {navigation.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={`text-lg block font-bold `}
-              >
-                <span onClick={() => setIsOpen(false)}>{link.name}</span>
-              </Link>
-            ))}
-          </ul>
+        </div>
+        <div>
+        <ul
+          id="mobile_nav"
+          className={`transition-all duration-300 absolute  bg-primary text-white flex  ${
+            isOpen
+              ? "visible opacity-1 translate-y-0"
+              : "invisible opacity-0 translate-y-10"
+          } flex-col ${
+            scrolled ? "top-24" : "top-16"
+          } md:top-24 w-full lg:hidden shadow-md left-0 py-3 `}
+        >
+          <div className="w-11/12 mx-auto">
+           
+
+            {/* <hr className="my-2" /> */}
+            <ul className="py-2 font-bold text-sm md:text-base flex flex-col">
+              <NavItem
+                onClick={() => setIsOpen(false)}
+                title="About Us"
+                link="/about"
+                active={router.pathname === "/about"}
+              />
+              <NavItem
+                onClick={() => setIsOpen(false)}
+                title="Ventures"
+                link="/ventures"
+                active={router.pathname === "/ventures"}
+              />
+              <NavItem
+                onClick={() => setIsOpen(false)}
+                title="Contact Us"
+                link="/contact"
+                active={router.pathname === "/contact"}
+              />
+            </ul>
+          </div>
+          {/* <NavItem title="Home" link="/" active={router.pathname === "/"} /> */}
+        </ul>
         </div>
       </nav>
     </header>

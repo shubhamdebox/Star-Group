@@ -6,6 +6,7 @@ import "react-phone-input-2/lib/style.css";
 import Info from "@/components/Info";
 import Head from "next/head";
 import localFont from "next/font/local";
+import Link from "next/link";
 const techsans = localFont({
   src: "../public/Technique+Sans.otf",
   weight: "400",
@@ -116,7 +117,7 @@ const Contact = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="mt-20 md:mt-28">
+      <div className="mt-16 md:mt-24">
         <Info title={"Contact Us"} description={"Connect with Us!"} />
         <div className="z-50">
           <Toaster />
@@ -148,7 +149,7 @@ const Contact = () => {
                     />
                   </svg>
 
-                  <p className="text-sm md:text-base ">{`info@starsgroupinc.com`}</p>
+                  <p className="text-sm md:text-base "><Link href="mailto:info@starsgroupinc.com" className="">{`info@starsgroupinc.com`}</Link></p>
                 </div>
                 <div className="flex items-center justify-center md:justify-start py-2">
                   <svg
@@ -179,7 +180,7 @@ Greenfield, IN 46140
                       d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                     />
                   </svg>
-                  <p className="text-sm md:text-base pt-3">{`+1 (908) 625-2228`}</p>
+                  <p className="text-sm md:text-base pt-3"><Link href="tel:+1 908 625 2228" className="">{`+1 (908) 625-2228`}</Link></p>
                 </div>
               </div>
             </div>

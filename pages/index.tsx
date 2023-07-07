@@ -10,6 +10,7 @@ import Center from "@/components/reusable/Center";
 import Map from "../components/Map";
 import Head from "next/head";
 import Homeinfo from "@/components/Homeinfo";
+import Solution from "@/components/Solution";
 
 export default function Home({ data, data2 }: any) {
   return (
@@ -22,20 +23,18 @@ export default function Home({ data, data2 }: any) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="md:mt-[5rem] mt-24 ">
+      <div className="md:mt-[5rem] mt-16 ">
         <div className="relative">
-          <Topline />
+          
           <Toprightcorner />
           <Center />
           <Bottomline />
           <Hero data={data} />
         </div>
-        <Homeinfo />
-        <div className="relative">
-          <Center />
-          <Homegridcon />
-        </div>
+        
+        
         <Services />
+        <Solution data={data2}/>
         <div className="relative">
           <Toprightcorner />
           <Map value={data2} />

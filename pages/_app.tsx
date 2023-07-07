@@ -41,13 +41,18 @@ export default function App({ Component, pageProps }: AppProps) {
     },
   };
 
+
   const router = useRouter()
+  const { category } = router.query;
 
   return (
     <>
       <div className={`${techsans.className}`}>
         <Layout>
           <LazyMotion features={domAnimation}>
+            {category != null ? <>
+              <Component {...pageProps} />
+            </> : <>
             <m.div
               key={router.asPath}
               variants={variants}
@@ -57,6 +62,8 @@ export default function App({ Component, pageProps }: AppProps) {
             >
               <Component {...pageProps} />
               </m.div>
+            </>}
+            
           </LazyMotion>
         </Layout>
       </div>

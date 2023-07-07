@@ -56,6 +56,9 @@ export async function getStaticProps() {
           mainImage {
             url
           }
+          category {
+            name
+          }
           about
           location
           title

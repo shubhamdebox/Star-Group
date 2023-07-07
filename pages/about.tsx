@@ -10,6 +10,7 @@ import { gql } from "@apollo/client";
 import Head from "next/head";
 import Team2 from "@/components/Team2";
 import Bottomline from "@/components/reusable/Bottomline";
+import Homegridcon from "@/components/Homegridcon";
 
 export default function about({ data }: any) {
   return (
@@ -26,13 +27,20 @@ export default function about({ data }: any) {
         <div className=" md:mt-[6rem] ">
           <Info
             title="About Us"
-            description="Discover the Story Behind Our Success."
+            // description="Discover the Story Behind Our Success."
+            description="Star Group is an amalgamation of flourishing endeavors that span across various sectors. 
+            We pride ourselves on our diverse portfolio, ranging from high-end hotels like Star Nest, Holiday Inn Express, and Hilton, to IT staffing via American Star Alliance, and leading cosmetology services with StarGlow Salons."
           ></Info>
           <div className="relative">
             <Toprightcorner />
             <Center />
             <Colagecontainer></Colagecontainer>
+            
           </div>
+          <div className="relative">
+          <Center />
+          <Homegridcon />
+        </div>
           <div className="relative">
             <Bottom />
             {/* <Team value={data}/> */}

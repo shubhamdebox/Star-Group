@@ -12,45 +12,45 @@ const Timeline = () => {
   let data = [
     {
       image: img,
-      year: "2002",
-      title: "Birth of American Star Alliance",
+      year: "2001",
+      title: "Dawn of American Star Alliance",
       content:
-        "American Star Alliance was established, marking our initial foray into the IT sector, with a special emphasis on manpower consultancy.",
+        "Marking the genesis of Star Group, our first venture, the American Star Alliance, came into being, setting the foundation for the many endeavours that followed."
+    },
+    {
+      image: img,
+      year: "2003",
+      title: "Entering the Wellness Industry with StarGlow Salon",
+      content:
+        "Embracing the wellness industry, we launched the StarGlow Salon. This venture brought a new dimension to our diverse portfolio, promising holistic well-being for all.",
     },
     {
       image: img,
       year: "2006",
-      title: "Acquisition of our First Hotel - The Holiday Inn, Crawfordsville",
+      title: "First Footprint in Commercial Real Estate",
       content:
-        "Our journey into the hospitality industry began with the acquisition of the Holiday Inn in Crawfordsville.",
-    },
-    {
-      image: img,
-      year: "2009",
-      title: "Establishment of the Holiday Inn Express, Crawfordsville",
-      content:
-        "The year saw the ground-up construction of the Holiday Inn Express in Crawfordsville, expanding our footprint in the hotel industry.",
+        "Our journey into the realm of commercial real estate began with the acquisition of the Holiday Inn in Crawfordsville, IN. A momentous step that set the stage for future growth in this sector."
     },
     {
       image: img,
       year: "2012",
-      title: "Launch of the Holiday Inn Express, Greenfield ",
+      title: "Holiday Inn - Greenfield, A New Landmark",
       content:
-        "Continuing our expansion, the Holiday Inn Express in Greenfield was set up.",
+        "With the establishment of the Holiday Inn in Greenfield, IN, we continued our journey in the hospitality sector, further solidifying our presence in commercial real estate.",
     },
     {
       image: img,
       year: "2019",
-      title: "Arrival of Fairfield Inn by Marriott",
+      title: "Fairfield Inn - A Tribute to Excellence",
       content:
-        "Adding to our diversifying hotel portfolio, the Fairfield Inn by Marriott was established.        ",
+        "The Fairfield Inn in Greenfield, IN marked another milestone in our journey, embodying our commitment to providing premium services and fostering strong relationships with customers.",
     },
     {
       image: img,
       year: "2023",
-      title: "Unveiling of The Nest",
+      title: "The Nest - A New Home in Greenfield",
       content:
-        "The Nest, our latest venture, opened its doors, signifying the ongoing growth of the Star Group's hotel portfolio.",
+        "As our most recent venture, The Nest in Greenfield, IN, reaffirms our commitment to provide high-quality commercial real estate properties. It's more than a property; it's a home to many.",
     },
   ];
 
