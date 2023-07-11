@@ -19,7 +19,7 @@ const myFont = localFont({ src: "../public/nimbussandext.ttf" });
 
 const Map = ({ value }: any) => {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyCr4VwBanytO5rAGUOyhJ3VgNCltEYCUeI",
+    googleMapsApiKey: "AIzaSyCFrUm9HpYqW8Rs74C1xQxdVhF3IjcUDpQ",
     libraries: ["places"],
   });
 
@@ -142,34 +142,38 @@ const Map = ({ value }: any) => {
                                 <div className=" ">
                                   <Link href={obj.websiteUrl} target="_blank">
                                     <>
-                                    <div className="flex space-x-2">
-                                      <div>
-                                        <Image
-                                          src={obj?.mainImage?.url || "/"}
-                                          alt={"website url"}
-                                          width={150}
-                                          height={0}
-                                          className="h-full"
-                                        />
-                                      </div>
-                                      <div className="flex flex-col space-y-2">
-                                        <p
-                                          className={`font-bold ${myFont.className} text-lg`}
-                                        >
-                                          {obj.ventureName}
-                                        </p>
-                                        {obj.venturestatus != "Active" ? (
-                                          <p className={`${myFont.className}`}>
-                                            {obj.venturestatus}
+                                      <div className="flex space-x-2">
+                                        <div>
+                                          <Image
+                                            src={obj?.mainImage?.url || "/"}
+                                            alt={"website url"}
+                                            width={150}
+                                            height={0}
+                                            className="h-full"
+                                          />
+                                        </div>
+                                        <div className="flex flex-col space-y-2">
+                                          <p
+                                            className={`font-bold ${myFont.className} text-lg`}
+                                          >
+                                            {obj.ventureName}
                                           </p>
-                                        ) : (
-                                          ""
-                                        )}
-                                        <p className={`${techsans.className}`}>
-                                          {obj.about}
-                                        </p>
+                                          {obj.venturestatus != "Active" ? (
+                                            <p
+                                              className={`${myFont.className}`}
+                                            >
+                                              {obj.venturestatus}
+                                            </p>
+                                          ) : (
+                                            ""
+                                          )}
+                                          <p
+                                            className={`${techsans.className}`}
+                                          >
+                                            {obj.about}
+                                          </p>
+                                        </div>
                                       </div>
-                                    </div>
                                     </>
                                   </Link>
                                 </div>
