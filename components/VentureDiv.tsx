@@ -62,7 +62,7 @@ export default function VentureDiv({ value }: any) {
           </button>
           {categories.map((e: any) => {
             return (
-              <>
+              <div key={e}>
                 <button
                   className={`${
                     category == e ? "bg-primary/90  text-white " : " "
@@ -80,7 +80,7 @@ export default function VentureDiv({ value }: any) {
                 >
                   {e}
                 </button>
-              </>
+              </div>
             );
           })}
         </div>

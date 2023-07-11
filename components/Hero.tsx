@@ -58,8 +58,8 @@ export default function Hero({ data }: any) {
               {imageurls.map((val: any , index : any) => {
                 return (
                   
-                  <div key={val.url}>
-                    <SwiperSlide>
+                  
+                    <SwiperSlide key={index}>
                       <Image
                         src={val.url}
                         alt={"hero images"}
@@ -68,8 +68,7 @@ export default function Hero({ data }: any) {
                         className="z-5"
                       />
                     </SwiperSlide>
-                    </div>
-                 
+                  
                 );
               })}
             </Swiper>
