@@ -40,7 +40,7 @@ const Map = ({ value }: any) => {
         <div className={`text-4xl  lg:text-5xl ${myFont.className}`}>
           <p>{`Our Reach`}</p>
         </div>
-        <p className="md:text-lg max-w-4xl">
+        <p className="md:text-lg max-w-4xl px-3 md:px-0">
           {
             "Starting with the American Star Alliance in 2002, we have come a long way with multiple ventures in hospitality, cosmetology and IT staffing based in Indiana, Pennsylvania and New Jersey."
           }
