@@ -57,7 +57,7 @@ const Solutions = ({ data }: any) => {
                         {solutions.map((solution: any, idx: any) => {
                             return (
                                 <SwiperSlide
-                                    key={solution.title}
+                                    key={idx}
                                     className="flex h-full !w-fit cursor-pointer"
                                 >
                                     <Link href={solution.websiteUrl} target="_blank" key={solution.mainImage.url}>

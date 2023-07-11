@@ -90,7 +90,7 @@ export default function VentureDiv({ value }: any) {
               <div className="hidden md:block">
                 {data.map((val: any, index: any) => {
                   return (
-                    <div className="py-3 lg:py-10 " key={index}>
+                    <div className="py-3 lg:py-10 " key={val.about}>
                       <div
                         className={`  ${
                           index % 2 == 0 ? "flex row" : "flex flex-row-reverse "

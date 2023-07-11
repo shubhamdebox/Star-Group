@@ -31,14 +31,9 @@ const NavItem = ({
         onClick={onClick}
         className="transition-colors duration-300 hover:text-prime cursor-pointer space-x-1"
       >
-        <Link
-          href={link}
-          className={`py-2 font-bold items-center justify-center transition-colors duration-300 hover:text-secondary  text-base md:text-base ${
-            active ? "text-secondary" : "text-white"
-          }`}
-        >
+       
           {title}
-        </Link>
+  
         {hasDropdown ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
