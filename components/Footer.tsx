@@ -54,8 +54,13 @@ const Footer = () => {
           </span>
           <span className="px-1"> All rights reserved by Star Group</span>
         </p>
-        <Link href="https://debox.co.in/" target="_blank" className="text-base">
-          Designed and developed by <span className=""> Debox Consulting</span>
+        <Link
+          href="https://www.deboxmarketing.com/"
+          target="_blank"
+          className="text-base"
+        >
+          Designed and developed by{" "}
+          <span className="underline hover:no-underline">Debox</span>
         </Link>
       </div>
     </div>
